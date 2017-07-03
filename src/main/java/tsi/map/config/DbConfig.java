@@ -85,8 +85,11 @@ public class DbConfig {
         vendorAdapter.setDatabasePlatform(env.getRequiredProperty("hibernate.dialect"));
         vendorAdapter.setDatabase(Database.MYSQL);
 
+        Properties properties = new Properties();
+        properties.setProperty("hibernate.id.new_generator_mappings",env.getRequiredProperty("hibernate.id.new_generator_mappings"));
 
         em.setJpaVendorAdapter(vendorAdapter);
+        em.setJpaProperties(properties);
         em.afterPropertiesSet();
 
         return em;

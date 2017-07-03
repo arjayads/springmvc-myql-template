@@ -29,7 +29,7 @@ public class Login {
     private Boolean successful;
 
     @Column
-    private Boolean isMaster;
+    private Boolean isMaster = false;
 
     public Login() {}
 
