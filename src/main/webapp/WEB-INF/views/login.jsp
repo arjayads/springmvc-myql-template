@@ -19,7 +19,9 @@
         <div class="row" style="margin-top: 100px;">
             <div class="col-md-12">
                 <div class="col-md-3 col-md-offset-4" style="border: solid 1px lightblue; padding: 20px;">
-                    <p class="text-center text-primary">Noreco1 Automated Mapping and Facilities Management</p>
+                    <div class="text-center"><a href="/">Home</a></div>
+
+                    <h4 class="text-center text-info">Noreco1 Automated Mapping and Facilities Management</h4>
                     <form method="post" action="${pageContext.request.contextPath}/login${param.target == null ? '' : '?target='}${param.target == null ? '' : param.target}">
                         <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
                         <fieldset>
