@@ -2,6 +2,13 @@
 
 <footer class="footer">
     <div class="container">
-        <p class="text-muted">&copy; 2017</p>
+        <div style="margin: 20px 0;">
+            <c:if test="${not empty pageContext.request.userPrincipal}">
+                <form id="logout" class="" action="${pageContext.request.contextPath}/logout" method="post">
+                    <input type="submit" value="Log out" />
+                    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+                </form>
+            </c:if>
+        </div>
     </div>
 </footer>

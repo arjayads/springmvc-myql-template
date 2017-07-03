@@ -137,7 +137,7 @@ class CustomAuthenticationSuccessHandler implements AuthenticationSuccessHandler
         String targetUrl = request.getParameter("target");
 
         if (targetUrl == null || targetUrl.trim().equals("")) {
-            targetUrl = "/";
+            targetUrl = "/account";
         }
         redirectStrategy.sendRedirect(request, response, targetUrl);
     }

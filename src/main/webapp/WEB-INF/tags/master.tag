@@ -18,6 +18,7 @@
     <my:nav/>
 
     <jsp:invoke fragment="body"/>
+
 </div>
 <my:footer/>
 
