@@ -10,6 +10,7 @@ public class GlobalConstant {
     public final static SimpleDateFormat YYYY_DATE_FORMAT = new SimpleDateFormat("yyyy");
     public final static String MODEL_PACK = "tsi.map.model";
     public final static String FILE_DL_PATH = "/file/attached";
+    public final static String DIR_SEPARATOR = "/";
     public final static Short DEBIT = 1;
     public final static Short CREDIT = 2;
 }

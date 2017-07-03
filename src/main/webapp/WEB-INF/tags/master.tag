@@ -15,7 +15,12 @@
 
 <div class="container">
 
-    <my:nav/>
+    <c:if test="${not empty pageContext.request.userPrincipal}">
+        <my:nav-account/>
+    </c:if>
+    <c:if test="${empty pageContext.request.userPrincipal}">
+        <my:nav/>
+    </c:if>
 
     <jsp:invoke fragment="body"/>
 
